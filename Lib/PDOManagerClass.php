@@ -46,12 +46,19 @@ class PDOManagerClass {
         $query = "SELECT * FROM $table";
 
         if (count($criteria) > 0) {
-            $query .= " where ";
+            $query .= " WHERE ";
             
+            $n = 0;
             foreach ($criteria as $index => $value) {
-                $query .= $index . " = " . $value;
+                $query .= $index . " = '" . $value ."'";
+
+                if($n < count($criteria)-1) {
+                    $query .= " AND ";
+                }
+                $n++;
             }
         } 
+        var_dump($query);
 
         if(!is_null($order)) {
             $arrayIndex = array_keys($order);

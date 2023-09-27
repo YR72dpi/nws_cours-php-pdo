@@ -1,6 +1,9 @@
 # Problème 1️⃣
 
-Grace à une class PHP, connecter vous à une base de cette manière : 
+Grace à une class PHP
+- Connecter vous à une base de 
+
+de cette manière : 
 ```php
 require_once("./Lib/PDOManagerClass.php");
 $pdo = new PDOManagerClass("nws_courspdo");

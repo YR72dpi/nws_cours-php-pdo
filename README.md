@@ -1,6 +1,6 @@
 # MySQL et PHP PDO
 
-Create, Read, Update et Delete
+Create, Read, Update et Delete (CRUD)
 
 1. Le MySQL
    - Importation depuis un csv

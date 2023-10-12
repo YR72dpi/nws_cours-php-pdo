@@ -1,5 +1,5 @@
 ```php 
-public function findBy(string $table, array $criteria, array $order = null) : array {
+    public function findBy(string $table, array $criteria, array $order = null) : array {
         $data = [];
         $query = "SELECT * FROM $table";
 

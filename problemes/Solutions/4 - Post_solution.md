@@ -1,5 +1,5 @@
 ```php
-public function post(string $table, array $columnData): bool
+    public function post(string $table, array $columnData): bool
     {
         $query = "INSERT INTO " . $table . " ";
 

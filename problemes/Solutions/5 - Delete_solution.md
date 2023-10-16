@@ -1,3 +1,4 @@
+[< Retour](../../README.md)
 ```php
     /* 
         /!\ Return true si bien supprimé ou déjà supprimé

@@ -1,3 +1,4 @@
+[< Retour](../README.md)
 # Problème 4️⃣
 
 Grace à une class PHP :
@@ -33,3 +34,5 @@ La __methode__ prend en paramètre :
 ```
 
 Elle __return__ un __boolean__
+
+[Solution](./Solutions/4%20-%20Post_solution.md)

@@ -1,3 +1,4 @@
+
 # Problème 6️⃣
 
 Grace à une class PHP :
@@ -29,3 +30,5 @@ La __methode__ prend en paramètre :
 3. un __tableau__ correspondant à l'ID de la ligne à supprimer
 
 Elle __return__ un __boolean__
+
+[Solution](./Solutions/6%20-%20Update_solution.md)

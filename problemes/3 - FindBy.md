@@ -1,4 +1,5 @@
-# Problème 3️⃣
+
+[< Retour](../README.md)# Problème 3️⃣
 
 Grace à une class PHP :
 - Connecter vous à une base
@@ -28,3 +29,5 @@ La __methode__ prend en paramètre :
 3. un __tableau associatif optionnel__ 
 
 Elle __return__ un __tableau__
+
+[Solution](./Solutions/3%20-%20FindBy_solution.md)

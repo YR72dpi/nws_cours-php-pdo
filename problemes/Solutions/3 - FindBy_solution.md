@@ -1,3 +1,4 @@
+[< Retour](../../README.md)
 ```php 
     public function findBy(string $table, array $criteria, array $order = null) : array {
         $data = [];

@@ -1,3 +1,4 @@
+[< Retour](../README.md)
 # Problème 1️⃣
 
 Grace à une class PHP
@@ -22,3 +23,4 @@ try {
     die("Erreur de connexion : " . $e->getMessage());
 }
 ```
+[Solution](./Solutions/1%20-%20dbConnection_solution.md)

@@ -1,3 +1,4 @@
+[< Retour](../../README.md)
 ```php
     public function findAll(string $table) : array {
         $data = [];

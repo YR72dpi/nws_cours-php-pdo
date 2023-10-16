@@ -1,4 +1,5 @@
-````php
+`[< Retour](../../README.md)
+```php
     public function update(string $table, int $id, array $columnData): bool {
         $query = "UPDATE $table SET ";
 

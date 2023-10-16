@@ -1,11 +1,12 @@
 ```php
 class PDOManagerClass {
 
-    // To Edit
+    // Information de connection à la db à modifier
     private $host = 'localhost';
-    private $db_name;
     private $username = 'root';
     private $password = '';
+
+    private $db_name;
     private $pdo;
 
     public function __construct(string $DBName) {

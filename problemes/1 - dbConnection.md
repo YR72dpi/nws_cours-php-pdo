@@ -1,7 +1,7 @@
 # Problème 1️⃣
 
 Grace à une class PHP
-- Connecter vous à une base de 
+- Connecter vous à une base de donnée
 
 de cette manière : 
 ```php

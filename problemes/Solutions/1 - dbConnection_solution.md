@@ -1,5 +1,4 @@
 [< Retour](../../README.md)
-[< Retour](../../README.md)
 ```php
 class PDOManagerClass {
 

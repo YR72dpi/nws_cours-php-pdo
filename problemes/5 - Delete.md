@@ -2,8 +2,8 @@
 # Problème 5️⃣
 
 Grace à une class PHP :
-- Connecter vous à une base
-- Supprimer une ligne de votre table
+- Connectez-vous à une base
+- Supprimez une ligne de votre table
 
 de cette manière
 

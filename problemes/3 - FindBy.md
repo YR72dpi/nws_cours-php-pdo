@@ -2,8 +2,8 @@
 [< Retour](../README.md)# Problème 3️⃣
 
 Grace à une class PHP :
-- Connecter vous à une base
-- Récupérer tout les données selon un critère, dans un ordre choisie, d'une table 
+- Connectez-vous à une base
+- Récupérez tout les données selon un critère, dans un ordre choisie, d'une table 
 
 de cette manière
 

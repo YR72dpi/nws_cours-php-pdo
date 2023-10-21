@@ -2,8 +2,8 @@
 # Problème 4️⃣
 
 Grace à une class PHP :
-- Connecter vous à une base
-- Ajouter une ligne de votre table
+- Connectez-vous à une base
+- Ajoutez une ligne de votre table
 
 de cette manière
 

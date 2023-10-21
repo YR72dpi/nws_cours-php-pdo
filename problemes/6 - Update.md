@@ -2,8 +2,8 @@
 # Problème 6️⃣
 
 Grace à une class PHP :
-- Connecter vous à une base
-- Mettre à jour une ligne de votre table
+- Connectez-vous à une base
+- Mettez à jour une ligne de votre table
 
 de cette manière
 

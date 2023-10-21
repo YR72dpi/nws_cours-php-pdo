@@ -2,8 +2,8 @@
 # Problème 2️⃣
 
 Grace à une class PHP :
-- Connecter vous à une base
-- Récupérer tout les données d'une table 
+- Connectez-vous à une base
+- Récupérez tout les données d'une table 
 
 de cette manière :
 ```php

@@ -9,12 +9,12 @@
     <?php
         require_once("./Lib/PDOManagerClass.php");
 
-        $pdo = new PDOManagerClass("nws_courspdo");
+        $pdo = new PDOManagerClass("ordinateur");
 
         echo "<pre>";
         var_dump($pdo->update(
             "ordinateur", 
-            42,
+            1,
             [
                 "marque"=>"PackardBell",
                 "model" => "Ordi pas ouf",
@@ -29,8 +29,8 @@
         echo "<pre>";
         var_dump($pdo->findBy(
             "ordinateur", [
-            "id" => "42"
-        ], ["id" => "ASC"]));
+                "id" => 1
+            ], ["id" => "ASC"]));
         echo "</pre>";
     ?>
 </body>

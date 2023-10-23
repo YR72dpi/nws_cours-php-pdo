@@ -7,7 +7,7 @@ Grace à une class PHP
 de cette manière : 
 ```php
 require_once("./Lib/PDOManagerClass.php");
-$pdo = new PDOManagerClass("nws_courspdo");
+$pdo = new PDOManagerClass("db_name");
 ```
 
 Le __contructeur__ prend en paramètre une __chaîne de caractère__ correspondant au nom de la __base de donnée__.

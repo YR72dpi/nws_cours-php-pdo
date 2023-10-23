@@ -16,7 +16,7 @@ class PDOManagerClass {
     }
 
     // private
-    private function connect() : void {
+    private function connect() : bool {
         try {
             $pdo = new PDO("mysql:host=$this->host;dbname=$this->db_name", $this->username, $this->password);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

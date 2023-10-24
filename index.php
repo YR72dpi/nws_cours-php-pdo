@@ -10,28 +10,17 @@
         require_once("./Lib/PDOManagerClass.php");
 
         $pdo = new PDOManagerClass("ordinateur");
-
         echo "<pre>";
-        var_dump($pdo->update(
-            "ordinateur", 
-            1,
-            [
-                "marque"=>"PackardBell",
-                "model" => "Ordi pas ouf",
-                "puissance_cpu" => 2,
-                "capacite_ram" => 16,
-                "puissance_gpu" => 2,
-                "prix" => 500
-            ]
-        ));
-        echo "</pre>";
-
-        echo "<pre>";
-        var_dump($pdo->findBy(
-            "ordinateur", [
-                "id" => 1
-            ], ["id" => "ASC"]));
-        echo "</pre>";
+        $pdo->post("ordinateur", [
+            "marque" => "HP",
+            "model" => "X".mt_rand(100, 999),
+            "puissance_cpu" => 2.3,
+            "capacite_ram" => 32,
+            "puissance_gpu" => 1.9, 
+            "prix" => mt_rand(1000, 9999)
+        ]);
+        var_dump($pdo->findBy('ordinateur', ["marque" => "HP"], ["id" => "DESC"]));
+        echo "</>";
     ?>
 </body>
 </html>

@@ -1,5 +1,19 @@
 # Amélioration 🤩
 
+## Refactor les répétitions
+
+Des morceaux de codes se répètent. Vous pouvez les refactor en créant plusieurs méthode __privées__ qui vont gérer, réécrire, concaténer la chaine de caractère ```$query```.
+
+Appliquer cela pour les :
+- where
+- order by
+
+Pourquoi : code propre et refactor plus facile. Exemple : si vous avez besoins de mettre de meilleures conditions aux WHERE, on modifie à un seul endroit et pas plusieurs fois dans votre code et ca évites aussi de modifier différement ici et là.
+
+## Mettre des ```htmlspecialchars();```
+
+## Permettre de mettre des ``WHERE`` avec ``<`` ``>`` ``<=`` ``>=``
+
 ## Vérifier les types des entrées avant de poster ou de mettre à jour.
 
 Piste : 

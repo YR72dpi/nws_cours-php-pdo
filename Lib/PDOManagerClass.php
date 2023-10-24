@@ -13,50 +13,6 @@ class PDOManagerClass implements PDOManagerInterface
     private $db_name;
     private $pdo;
     private PDOStatement $prepare;
-    private array $mariadbToPdoTypeMap = [
-        // Integer Types
-        'tinyint' => PDO::PARAM_INT,
-        'smallint' => PDO::PARAM_INT,
-        'mediumint' => PDO::PARAM_INT,
-        'int' => PDO::PARAM_INT,
-        'integer' => PDO::PARAM_INT,
-        'bigint' => PDO::PARAM_INT,
-    
-        // Floating-Point Types
-        'float' => PDO::PARAM_STR,
-        'double' => PDO::PARAM_STR,
-        'decimal' => PDO::PARAM_STR,
-    
-        // String Types
-        'char' => PDO::PARAM_STR,
-        'varchar' => PDO::PARAM_STR,
-        'text' => PDO::PARAM_STR,
-        'tinytext' => PDO::PARAM_STR,
-        'mediumtext' => PDO::PARAM_STR,
-        'longtext' => PDO::PARAM_STR,
-    
-        // Binary Types
-        'binary' => PDO::PARAM_LOB,
-        'varbinary' => PDO::PARAM_LOB,
-        'blob' => PDO::PARAM_LOB,
-        'tinyblob' => PDO::PARAM_LOB,
-        'mediumblob' => PDO::PARAM_LOB,
-        'longblob' => PDO::PARAM_LOB,
-    
-        // Date and Time Types
-        'date' => PDO::PARAM_STR,
-        'datetime' => PDO::PARAM_STR,
-        'timestamp' => PDO::PARAM_STR,
-        'time' => PDO::PARAM_STR,
-        'year' => PDO::PARAM_INT,
-    
-        // Other Types
-        'boolean' => PDO::PARAM_BOOL,
-        'bool' => PDO::PARAM_BOOL,
-        'enum' => PDO::PARAM_STR,
-        'set' => PDO::PARAM_STR,
-        'json' => PDO::PARAM_STR,
-    ];
     private array $mysqlToPhpTypeMapping = [
         'TINYINT' => 'integer',
         'SMALLINT' => 'integer',
@@ -158,6 +114,7 @@ class PDOManagerClass implements PDOManagerInterface
 
                 if(gettype($value) === $phpTypeForTable) {
                     $goodType = true;
+                    $typeForBindParam = $tableColumn["Type"];
                     break;
                 }
             }
@@ -167,7 +124,7 @@ class PDOManagerClass implements PDOManagerInterface
             
             if($goodType) {
                 $value = htmlspecialchars($value);
-                return $this->prepare->bindParam(":".$column, $value);
+                return $this->prepare->bindParam(":".$column, $value, PDO::PARAM_STR);
             } else {
                 throw new Exception("Erreur de type pour $column", 1);
                 
